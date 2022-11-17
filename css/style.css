@@ -15,12 +15,6 @@
     padding: 0;
 }
 
- @media (max-width: 500px) {
-    body {
-        width: 500px;
-    }
-} 
-
 body {
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;
@@ -30,7 +24,7 @@ header, section, article {
     padding: 80px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
     header, section, article {
         padding: 40px;
     }
@@ -41,7 +35,7 @@ h1, h2 {
     color: var(--Very-Dark-Cyan);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
     h1, h2 {
     text-align: center;
 
@@ -61,7 +55,7 @@ header {
     background-color: var(--Very-Pale-Cyan);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
     header {
     background-image: url('../images/bg-hero-mobile.svg');
     }
@@ -70,6 +64,7 @@ header {
 header .headd {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 header .headd button {
@@ -82,12 +77,25 @@ header .headd button {
     font-weight: 600;
 }
 
+@media (max-width: 500px) {
+    header .headd img {
+        max-width: 55%;
+    }
+}
+
+@media (max-width: 500px) {
+    header .headd button {
+        padding: 5px 25px;
+    }
+}
+
 header .build {
     padding-top: 40px;
     display: flex;
+    align-items: center;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
     header .build {
         display: flex;
         flex-direction: column;
@@ -101,7 +109,7 @@ header .build .free {
     padding-right: 40px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
     header .build .free {
         padding-right: 0;
     }
@@ -119,7 +127,7 @@ header .build .free p {
     padding-bottom: 20px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
     header .build .free p {
         text-align: center;
     }
@@ -134,7 +142,7 @@ header .build .free button {
     font-weight: 600;
 }
 
-@media (max-width: 700px) { 
+@media (max-width: 500px) { 
     header .build .free button {
     position: relative;
     left: 50%;
@@ -147,7 +155,7 @@ header .build img {
     width: 55%;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
     header .build img {
         width: 100%;
     }
@@ -168,14 +176,14 @@ section .box {
     margin-bottom: 30px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
     section .box:not(:nth-child(2)) {
         flex-direction: column-reverse;
         padding: 30px;
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
     section .box:nth-child(2) {
         flex-direction: column;
         padding: 30px;
@@ -191,7 +199,7 @@ section .box .text p {
     line-height: 1.4;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
     section .box .text p {
         text-align: center;
     }
@@ -202,7 +210,7 @@ section .box img {
     width: 60%;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
     section .box img {
         width: 100%;
        margin-bottom: 20px;
@@ -213,7 +221,7 @@ section .box img:not(:nth-child(1)) {
     padding-left: 200px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
     section .box img:not(:nth-child(1)) {
         padding-left: 0;
     }
@@ -222,7 +230,7 @@ section .box img:nth-child(1) {
     padding-right: 200px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
     section .box img:not(:nth-child(2)) {
         padding-right: 0;
     }
@@ -244,7 +252,7 @@ article {
     background-color: white;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
     article {
         width: 90%;
     }
@@ -271,7 +279,7 @@ footer {
     display: block; 
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
     footer {
         padding: 70px 10px;
     }
@@ -288,7 +296,7 @@ footer .all {
     gap: 10px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
     footer .all {
         display: flex;
         flex-direction: column;
@@ -301,13 +309,13 @@ footer .all .firstcolumn,
    margin: 0 auto;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
     footer .all .firstcolumn {
         margin-bottom: 10px;
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
     footer .all .secondcolumn, 
     footer .all .thirdcolumn {
         margin: 0;
@@ -341,7 +349,7 @@ footer .all .fourthcolumn .icon i {
     padding-right: 10px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
     footer .all .fourthcolumn .icon, footer .all .fourthcolumn p {
         text-align: center;
     }
@@ -351,7 +359,7 @@ footer .all .fourthcolumn p {
     margin-top: 200px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
     footer .all .fourthcolumn p {
         margin-top: 20px;
     }
